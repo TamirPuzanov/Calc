@@ -5,12 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
     <div class="container">
-        
+        <div class="title">Генератор билетов по Мат. Анализу</div>
+        <div class="text">
+            Готовы ли вы к генеральному испытанию своих знаний и умений? 
+            Наш суперсложный генератор билетов поможет вам проверить свои силы и даже научиться некоторым забавным вещам!
+            С тысячей (65 ._.) разнообразных вопросов, вы сможете отточить свои навыки и стать настоящим экспертом 
+            в самых неожиданных областях мат. анализа!
+
+            Не бойтесь, наши билеты не кусаются! Но они могут проверить вашу готовность к нестандартным (стандартным) задачам и неожиданным (ожиданным) вопросам.
+            Станьте настоящим профессионалом в мире математических анализов и покорите все максимумы дифференциального исчисления! Удачи вам на экзамене!
+        </div>
+
+        <div class="inputs">
+
+            <button id="generate">Сгенерировать билет</button>
+
+            <input id="cb-questions" type="checkbox" value="man" name="questions" disabled checked/>
+            <label for="questions">Вопросы;</label>
+
+            <input id="cb-tasks" type="checkbox" value="man" name="tasks"/>
+            <label for="tasks">Задачи из Демидовича;</label>
+
+            <input id="cb-modus" type="checkbox" value="man" name="modus_ponens"/>
+            <label for="modus_ponens">Modus Ponens;</label>
+        </div>
+
+        <div id="page" class="page" style="display: none;">
+            <div class="page-title-1">1 курс, 1 семестр. «Математический анализ»</div>
+            <div class="page-title-1">Билет №1. 10.02.2024.</div>
+
+            <div class="tasks">
+                <ol id="tasks-list">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ol>
+            </div>
+        </div>
     </div>
     
     <script src="js/jquery.min.js"></script>

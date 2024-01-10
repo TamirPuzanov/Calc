@@ -1,0 +1,92 @@
+* {
+    margin: 0px;
+    padding: 0px;
+
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.container {
+    width: calc(100% - 400px);
+    min-height: 200px;
+
+    padding: 70px 200px;
+}
+
+.title {
+    font-size: 30px;
+    font-weight: 700;
+
+    margin-bottom: 18px;
+}
+
+.text {
+    font-size: 18px;
+    font-weight: 400;
+
+    text-align: justify;
+    width: 930px;
+
+    margin-bottom: 16px;
+}
+
+.inputs {
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+    margin-bottom: 45px;
+}
+
+input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    margin-right: 6px;
+}
+
+label {
+    margin-right: 20px;
+}
+
+button#generate {
+    padding: 8px 16px;
+    background: #04a504;
+    color: #ffffff;
+    border-radius: 2px;
+    border: none;
+    margin-right: 22px;
+    cursor: pointer;
+}
+
+.page {
+    width: 720px;
+    -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    box-shadow: 2px 4px 5px 0px rgba(34, 60, 80, 0.2);
+    border: 1px solid #efefef;
+
+    margin-bottom: 50px;
+    padding: 40px 20px;
+}
+
+.page-title-1, .page-title-2 {
+    width: 100%;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.page-title-1 {
+    font-size: 18px;
+}
+
+ol {
+    padding: 20px 40px;
+}
+
+ol > li {
+    margin-bottom: 12px;
+}

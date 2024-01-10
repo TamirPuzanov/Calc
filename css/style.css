@@ -107,8 +107,8 @@ ol > li {
 
 @media (min-width: 50px) and (max-width: 652px) { 
     .container {
-        width: calc(100% - 100px);
-        padding: 60px 50px;
+        width: calc(100% - 40px);
+        padding: 60px 20px;
     }
 
     .inputs {

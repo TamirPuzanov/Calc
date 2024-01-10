@@ -28,8 +28,9 @@ body {
     font-weight: 400;
 
     text-align: justify;
-    width: 930px;
-
+    
+    width: auto;
+    max-width: 930px;
     margin-bottom: 16px;
 }
 
@@ -62,7 +63,9 @@ button#generate {
 }
 
 .page {
-    width: 720px;
+    width: auto;
+    max-width: 720px;
+
     -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
     -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
     box-shadow: 2px 4px 5px 0px rgba(34, 60, 80, 0.2);
@@ -89,4 +92,27 @@ ol {
 
 ol > li {
     margin-bottom: 12px;
+}
+
+@media (min-width: 652px) and (max-width: 1200px) { 
+    .container {
+        width: calc(100% - 200px);
+        padding: 60px 100px;
+    }
+}
+
+@media (min-width: 50px) and (max-width: 652px) { 
+    .container {
+        width: calc(100% - 100px);
+        padding: 60px 50px;
+    }
+
+    .inputs {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    #generate {
+        margin-bottom: 10px;
+    }
 }

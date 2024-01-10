@@ -94,6 +94,10 @@ ol > li {
     margin-bottom: 12px;
 }
 
+.title-2 {
+    display: none;
+}
+
 @media (min-width: 652px) and (max-width: 1200px) { 
     .container {
         width: calc(100% - 200px);
@@ -114,5 +118,15 @@ ol > li {
 
     #generate {
         margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 705px) {
+    .title-2 {
+        display: block;
+    }
+
+    .title-1 {
+        display: none;
     }
 }

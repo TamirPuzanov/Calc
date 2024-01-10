@@ -120,13 +120,3 @@ ol > li {
         margin-bottom: 10px;
     }
 }
-
-@media (max-width: 705px) {
-    .title-2 {
-        display: block;
-    }
-
-    .title-1 {
-        display: none;
-    }
-}
